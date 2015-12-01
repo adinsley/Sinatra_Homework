@@ -1,0 +1,22 @@
+body {
+  background-color: red;
+  color: white;
+},
+
+a {
+color: white;
+text-decoration: none;
+padding-right: 50px;
+
+},
+
+h2 {
+  padding-left: 10px;
+
+},
+
+input {
+  margin: 200px;
+}
+
+li 
