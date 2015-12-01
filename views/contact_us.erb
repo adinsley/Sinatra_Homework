@@ -1,0 +1,24 @@
+<h2>Contact Us</h2>
+<p>Plese enter your contact details in the form below</p>
+
+<form action = 'contact_us' method = 'get'>
+<label>First Name<input type = 'text' name = 'firstname'></label>
+<label>Surname<input type = 'text' name = 'surname'></label>
+<label>Email<input type = 'email' name = 'email'></label>
+<label>Mobile<input type = 'number' name = 'mobile'></label>
+<label>Address<input type = 'text' name = 'email'></label>
+<button>Submit!</button>
+</form>
+
+<% if @firstname %>
+  <section>
+    <header>
+      <h1>Thanks for your input</h1>
+    </header>
+      <!-- p>The First Number was: <%= @first%> </p>
+      <p>The Operator was: <%= @operator%> </p>
+      <p>The Second Number was: <%= @second%> </p>
+      <hr/>
+      <h3>The result of <%= @first %> <%= @operator%> <%= @second%> is <%= @result %></h3> -->
+  </section>
+<%end%>

@@ -6,12 +6,17 @@
     <link rel ='stylesheet' href = '/style.css'/>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href = "/">home</a></li>
-        <li><a href ="/about_us">about us</a></li>
-      </ul>
-    <%= yield %>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li><a href = "/">home</a></li>
+          <li><a href ="/about_us">about us</a></li>
+          <li><a href ="/contact_us">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+      <section>
+          <%= yield %>
+      </section>
   </body>
 
