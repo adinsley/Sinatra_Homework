@@ -5,20 +5,22 @@
 <label>First Name<input type = 'text' name = 'firstname'></label>
 <label>Surname<input type = 'text' name = 'surname'></label>
 <label>Email<input type = 'email' name = 'email'></label>
-<label>Mobile<input type = 'number' name = 'mobile'></label>
-<label>Address<input type = 'text' name = 'email'></label>
+<label>Mobile<input type = 'text' name = 'mobile'></label>
+<label>Postcode<input type = 'postcode' name = 'postcode'></label>
 <button>Submit!</button>
 </form>
 
-<% if @firstname %>
+<% if @firstname == '' %>
   <section>
     <header>
-      <h1>Thanks for your input</h1>
+      <h1>Please enter your details</h1>
     </header>
-      <!-- p>The First Number was: <%= @first%> </p>
-      <p>The Operator was: <%= @operator%> </p>
-      <p>The Second Number was: <%= @second%> </p>
-      <hr/>
-      <h3>The result of <%= @first %> <%= @operator%> <%= @second%> is <%= @result %></h3> -->
+  </section>
+<% elsif @firstname != '' %>
+  <section>
+    <header>
+      <h1>Thanks for your input <%=@firstname%> you need to enter a valid email for us to contact you</h1>
+    </header>
   </section>
 <%end%>
+
